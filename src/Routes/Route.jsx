@@ -7,6 +7,10 @@ import Mycollege from "../Components/Mycollege";
 import Login from "../Components/Registration/Login";
 import Signup from "../Components/Registration/SignUp";
 import AllCollege from "../Components/allCollege";
+import Collegedetails from "./Collegedetails";
+import Eventsports from "./Eventsports";
+import PrivateRoute from "./PrivateRoute";
+import Information from "../Components/Information";
 
  
  const router = createBrowserRouter([
@@ -20,15 +24,30 @@ import AllCollege from "../Components/allCollege";
                                 element:<Home></Home>
                         },
                         {
-                                path:'college',
-                                element:<AllCollege></AllCollege>
+                                path:'allcollege',
+                                element:<AllCollege></AllCollege>,
+                                loader: () => fetch('http://localhost:5000/allcollege?search')
+                        },
+                        {
+                                path:'details/:id',
+                                element: <PrivateRoute><Collegedetails></Collegedetails></PrivateRoute>,
+                                loader: ({params}) => fetch(`http://localhost:5000/allcollege/${params.id}`)
+                        },
+                        {
+                                path:'detail/:id',
+                                element: <PrivateRoute><Eventsports></Eventsports></PrivateRoute>,
+                                loader: ({params}) => fetch(`http://localhost:5000/allcollege/${params.id}`)
                         },
                         {
                                 path:'admission',
                                 element:<Admission></Admission>
                         },
                         {
-                                path: 'mycollege',
+                                path:'info',
+                                element: <Information></Information>
+                        },
+                        {
+                                path:'mycollege',
                                 element:<Mycollege></Mycollege>
                         },
                         {
