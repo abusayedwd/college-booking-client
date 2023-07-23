@@ -1,9 +1,16 @@
 import React from 'react';
+import College from './College';
+import Gallery from './PhotoGallery';
+ 
+ 
 
 const Home = () => {
         return (
                 <div>
-                        <h1>this is home</h1>
+                   
+                      <College></College>
+                       <Gallery></Gallery>
+                       
                 </div>
         );
 };

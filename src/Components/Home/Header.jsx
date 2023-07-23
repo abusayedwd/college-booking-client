@@ -15,7 +15,7 @@ const Header = () => {
              
              const navitem = <>
                <li className='font-bold'><Link to = '/'>Home</Link></li>
-               <li className='font-bold'><Link to = '/college'>College</Link></li>
+               <li className='font-bold'><Link to = '/college'>AllCollege</Link></li>
                <li className='font-bold'><Link to = '/admission'>Admission</Link></li>
      
                {/* {user ? 

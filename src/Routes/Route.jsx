@@ -2,11 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Components/Home/Home";
 import Notfound from "./Notfound";
-import College from "../Components/College";
 import Admission from "../Components/Admission";
 import Mycollege from "../Components/Mycollege";
 import Login from "../Components/Registration/Login";
 import Signup from "../Components/Registration/SignUp";
+import AllCollege from "../Components/allCollege";
 
  
  const router = createBrowserRouter([
@@ -21,7 +21,7 @@ import Signup from "../Components/Registration/SignUp";
                         },
                         {
                                 path:'college',
-                                element:<College></College>
+                                element:<AllCollege></AllCollege>
                         },
                         {
                                 path:'admission',
