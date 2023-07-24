@@ -32,12 +32,12 @@ import Updateinfo from "../Components/Updateinfo";
                         {
                                 path:'details/:id',
                                 element: <PrivateRoute><Collegedetails></Collegedetails></PrivateRoute>,
-                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/${params.id}`)
+                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/allcollege/${params.id}`)
                         },
                         {
                                 path:'detail/:id',
                                 element: <PrivateRoute><Eventsports></Eventsports></PrivateRoute>,
-                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/${params.id}`)
+                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/allcollege/${params.id}`)
                         },
                         {
                                 path:'admission',

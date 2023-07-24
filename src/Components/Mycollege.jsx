@@ -29,7 +29,7 @@ const handleDelete = id => {
                 confirmButtonText: 'Yes, delete it!'
               }).then((result) => {
 if (result.isConfirmed) {
-        fetch(`https://college-booking-server-alpha.vercel.app/${id}`, {
+        fetch(`https://college-booking-server-alpha.vercel.app/addinfo/${id}`, {
                 method: 'delete',
         })
         .then(res => res.json())
