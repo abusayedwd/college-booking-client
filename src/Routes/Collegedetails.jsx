@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Collegedetails = () => {
       const singlecollege = useLoaderData()
@@ -29,7 +29,7 @@ const Collegedetails = () => {
     }
     <p> <span className='text-1xl font-bold'>Research college:</span> As you might guess, a research university prioritizes research. At these institutions, graduate students, postdocs, and professors conduct original research in diverse fields. Research universities can be public or private institutions.</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Watch</button>
+      <Link to ='/'><button className="btn btn-primary">Back</button></Link>
     </div>
   </div>
 </div>

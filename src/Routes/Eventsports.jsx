@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Eventsports = () => {
         const eventsport = useLoaderData();
@@ -30,6 +30,9 @@ const Eventsports = () => {
                    </div> 
 
                      </div>
+                   <Link to = '/allcollege'> 
+                   <button className='btn btn-accent'>back</button>
+                   </Link>
                 </div>
         );
 };
