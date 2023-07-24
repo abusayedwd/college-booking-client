@@ -7,7 +7,7 @@ const College = () => {
         const searchRef = useRef(null)
         const [search, setSearch] = useState('')
         useEffect( () => {
-                fetch(`http://localhost:5000/allcollege?search=${search}`)
+                fetch(`https://college-booking-server-alpha.vercel.app/allcollege?search=${search}`)
                 .then(res => res.json())
                 .then(data => setallCollege(data))
                

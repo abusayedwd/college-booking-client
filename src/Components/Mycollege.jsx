@@ -10,7 +10,7 @@ const Mycollege = () => {
         const [mycollege, setMycollege] = useState([]) 
 
                 useEffect( () => {
-                        fetch(`http://localhost:5000/addinfo?email=${user?.email}`)
+                        fetch(`https://college-booking-server-alpha.vercel.app/addinfo?email=${user?.email}`)
                         .then(res => res.json())
                         .then(data => setMycollege(data))
                 
@@ -29,7 +29,7 @@ const handleDelete = id => {
                 confirmButtonText: 'Yes, delete it!'
               }).then((result) => {
 if (result.isConfirmed) {
-        fetch(`http://localhost:5000/addinfo/${id}`, {
+        fetch(`https://college-booking-server-alpha.vercel.app/${id}`, {
                 method: 'delete',
         })
         .then(res => res.json())

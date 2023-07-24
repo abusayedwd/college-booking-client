@@ -27,17 +27,17 @@ import Updateinfo from "../Components/Updateinfo";
                         {
                                 path:'allcollege',
                                 element:<AllCollege></AllCollege>,
-                                loader: () => fetch('http://localhost:5000/allcollege?search')
+                                loader: () => fetch('https://college-booking-server-alpha.vercel.app/allcollege?search')
                         },
                         {
                                 path:'details/:id',
                                 element: <PrivateRoute><Collegedetails></Collegedetails></PrivateRoute>,
-                                loader: ({params}) => fetch(`http://localhost:5000/allcollege/${params.id}`)
+                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/${params.id}`)
                         },
                         {
                                 path:'detail/:id',
                                 element: <PrivateRoute><Eventsports></Eventsports></PrivateRoute>,
-                                loader: ({params}) => fetch(`http://localhost:5000/allcollege/${params.id}`)
+                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/${params.id}`)
                         },
                         {
                                 path:'admission',
@@ -46,11 +46,11 @@ import Updateinfo from "../Components/Updateinfo";
                         {
                                 path:'updateinfo/:id',
                                 element:<Updateinfo></Updateinfo>,
-                                loader: ({params}) => fetch(`http://localhost:5000/addinfo/${params.id}`)
+                                loader: ({params}) => fetch(`https://college-booking-server-alpha.vercel.app/addinfo/${params.id}`)
                         },
                         {
                                 path:'info',
-                                element: <Information></Information>
+                                element: <PrivateRoute><Information></Information></PrivateRoute>
                         },
                         {
                                 path:'mycollege',

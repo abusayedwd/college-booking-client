@@ -24,7 +24,7 @@ const Updateinfo = () => {
                   
                 };
                
-                fetch(`http://localhost:5000/addinfo/${_id}`, {
+                fetch(`https://college-booking-server-alpha.vercel.app/addinfo/${_id}`, {
                   method: "put",
                   headers: {
                     "content-type": "application/json",

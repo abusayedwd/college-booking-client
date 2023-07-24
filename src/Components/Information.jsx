@@ -26,7 +26,7 @@ const Information = () => {
                   email, 
                 };
                 console.log(userInfo);
-                fetch("http://localhost:5000/addinfo", {
+                fetch("https://college-booking-server-alpha.vercel.app/addinfo", {
                   method: "POST",
                   headers: {
                     "content-type": "application/json",

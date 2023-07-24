@@ -4,7 +4,7 @@ import Collegename from './Collegename';
 const Admission = () => {
  const [name, setName] = useState([])
         useEffect( () => {
-                fetch(`http://localhost:5000/allcollege?search`)
+                fetch(`https://college-booking-server-alpha.vercel.app/allcollege?search`)
                 .then(res => res.json())
                 .then(data => setName(data))
                
