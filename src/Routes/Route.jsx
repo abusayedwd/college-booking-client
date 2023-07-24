@@ -11,6 +11,7 @@ import Collegedetails from "./Collegedetails";
 import Eventsports from "./Eventsports";
 import PrivateRoute from "./PrivateRoute";
 import Information from "../Components/Information";
+import Updateinfo from "../Components/Updateinfo";
 
  
  const router = createBrowserRouter([
@@ -41,6 +42,11 @@ import Information from "../Components/Information";
                         {
                                 path:'admission',
                                 element:<Admission></Admission>
+                        },
+                        {
+                                path:'updateinfo/:id',
+                                element:<Updateinfo></Updateinfo>,
+                                loader: ({params}) => fetch(`http://localhost:5000/addinfo/${params.id}`)
                         },
                         {
                                 path:'info',

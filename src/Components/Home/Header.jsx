@@ -18,12 +18,12 @@ const Header = () => {
                <li className='font-bold'><Link to = '/allcollege'>AllCollege</Link></li>
                <li className='font-bold'><Link to = '/admission'>Admission</Link></li>
      
-               {/* {user ? 
+               {user ? 
              <div className='flex'>
-                     <li className='font-bold'><Link to = '/mytoy'>My toy</Link></li>
+                     <li className='font-bold'><Link to = '/mycollege'>My College</Link></li>
                      
              </div>: '' 
-             } */}
+             }
                 
                 
                
@@ -31,7 +31,7 @@ const Header = () => {
              </>
              return (
                      <div>
-                     <div className="navbar shadow-2xl sticky bg-base-100">
+                     <div className="navbar shadow-2xl  bg-base-100">
      <div className="navbar-start">
      <div className="dropdown">
      <label tabIndex={0} className="btn btn-ghost lg:hidden">

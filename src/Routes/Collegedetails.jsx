@@ -18,7 +18,8 @@ const Collegedetails = () => {
     <p><span className='text-1xl font-bold'>Sports Category:</span></p>
     {
         sports_category.map((sports, i) => 
-                <><li key={i}>
+                <>
+                <li key={i}>
                         sports :  {sports.sport} 
                 </li>
                 <p >team: {sports.team_name}</p>

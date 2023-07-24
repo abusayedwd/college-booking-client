@@ -1,5 +1,5 @@
-import { key } from 'localforage';
-import React, { useEffect, useRef, useState } from 'react';
+ 
+import { useEffect, useRef, useState } from 'react';
 import Collegeshow from './Collegeshow';
 
 const College = () => {
@@ -21,15 +21,15 @@ const College = () => {
                 
                 <div>
                         <div className="form-control mt-12">
-  <div className="input-group">
-    <input type="text" ref={searchRef} placeholder="Search…" className="input input-bordered" />
+  <div className="input-group mt-6">
+    <input type="text" ref={searchRef} placeholder="Search…college" className="input input-bordered bg-slate-300" />
     <button onClick={handleSearch} className="btn btn-square">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
     </button>
   </div>
 </div>
                         
-                     <h1 className='font-bold text-center text-2xl mt-8 mb-16'>College</h1> 
+                     <h1 className='font-bold text-center text-2xl mt-8  mb-5 border-b-2'>Top College</h1> 
                      <div className='grid md:grid-cols-3 gap-5'>
                      {
                         allCollege.slice(0,3).map(college => 

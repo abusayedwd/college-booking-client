@@ -12,7 +12,8 @@ const Admission = () => {
         }, [ ])
         
         return (
-                <div>
+                <div className=' bg-slate-200'>
+                        <h1 className='text-2xl text-orange-400 font-bold my-10 text-center'>Most Pupolar College</h1>
                         {
                                 name.map(namecollege => 
                                     <Collegename key={namecollege._id}
