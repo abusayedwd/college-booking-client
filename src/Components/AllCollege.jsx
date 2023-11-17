@@ -10,8 +10,8 @@ const AllCollege = () => {
                         <h1 className='text-3xl text-center font-bold my-12'>All College</h1>
             <div  className='grid md:grid-cols-3 gap-6'>
                 {
-                        allcollege.map((totalcollege,i) => 
-                                <div key={i}>
+                        allcollege.map((totalcollege,index) => 
+                                <div key={index}>
 
 <div>
                         <div className="card w-full card-compact  bg-base-100 shadow-xl">
